@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELKOMMEN TIL LÆGERNES HUS - ET LÆGEHUS MED DIG I CENTRUM</title>
+    <meta name=”robots” content=”noindex”><!--Denne kode sørger for at Google ikke kan finde siden-->
+    <meta name="description" content="Vi er et kompetent og nærværende lægehus med fokus på vores patienter. Derfor har vi en hjemmeside og selvbetjening, skabt på baggrund af vores brugeres behov."/>
+    <meta name="keywords" content="lægehus, læge, personale, selvbetjening, log ind">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!--CSS bootstrap-->
+    <link rel="stylesheet" type="text/css" href="lægehus.css"> <!--CSS filen-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> <!--Får java-bootstrap til at virke (fx dropdownmenu + burgerbar samtidigt)-->
+</head>
+<body>
+
+<!-- ____________ NAVIGATIONSBAR ____________ -->
+<nav class="navbar navbar-expand-lg navbar-light"> <!--navbar-expand-lg gør så navbaren er på hele sitet når man har en lg+ skærm, men når den er mindre vil den vise en burgermenu-->
+  <div class="container-fluid">
+
+    <!-- ____________ HEADER (NAVBAR-BRAND) ____________ -->
+    <a class="navbar-brand" href="index.html" id="overskrift">LÆGERNES HUS</a>
+
+    <!-- ____________ BURGERMENUEN ____________ -->
+    <!--"ml-auto" skubber burgermenuen så langt fra venstre som muligt (margin-left)-->
+    <button class="navbar-toggler ml-auto" type="button" 
+    data-bs-toggle="collapse" data-bs-target="#navbarText" 
+    aria-controls="navbarText" aria-expanded="false" 
+    aria-label="Toggle navigation"> <!--Data-bs-toggle gør så de følgende menupunkter er gemt inde i burgerbaren vha. collapse-funktionen  -->
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+      <!--"ml-auto" skubber burgermenuen så langt fra venstre som muligt (margin-left)-->
+
+
+    <!--____________ KNAP 1: PRAKTISK INFO DROP DOWN MENU ____________-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="praktiskinfo.html" id="navbardropdown" 
+          role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            INFORMATION</a>
+
+          <!--UNDERSIDER PÅ DROPDOWN-->
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="praktiskinfo.html">PRAKTISK INFO</a></li>
+            <li><a class="dropdown-item" href="#">LINKS</a></li>
+            <li><a class="dropdown-item" href="#">VACCINATION</a></li>
+            <li><a class="dropdown-item" href="#">GRAVID</a></li>
+          </ul>
+        </li>
+
+    <!--____________ KNAP 2: LÆGEHUSET DROP DOWN MENU ____________-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
+          role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            LÆGEHUSET</a>
+
+          <!--UNDERSIDER PÅ DROPDOWN-->
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="personale.html">PERSONALE</a></li>
+            <li><a class="dropdown-item" href="#">AKTUELT</a></li>
+          </ul>
+        </li>
+
+    <!--____________ KNAP 3: FIND OS ____________-->
+        <li class="nav-item">
+          <a class="nav-link" href="findos.html">FIND OS</a>
+        </li>
+
+    <!--____________ KNAP 4: SELVBETJENING ____________-->
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="nav-btn-1">LOG PÅ SELVBETJENING</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+ <!-- ____________ CARDS TIL SELVBETJENING ____________ -->
+<div class="row row-cols-1 row-cols-md-3 g-4" id="trekassertilselvbetjening"> 
+
+  <div class="col-md-4 mb-2" id="receptfornyelse"> <!--De tre kolonner fylder på md+ 4 kolonner hver (=3 stk). Mb er marginbottom-->
+    <div class="card card-index h-100"> <!--h-100 gør at kasserne har samme højde-->
+      <img src="img/selvbetjening1.png" class="card-img-top" alt="https://www.flaticon.com/free-icon/syrup_2869719?term=medical&page=1&position=19&origin=style&related_id=2869719" id="selvbetjening1">
+      <div class="card-body">
+      <a href="#"><h6 class="card-title">RECEPTFORNYELSE</h6></a>
+        <p class="card-text">I vores selvbetjening kan du fornye dine recepter. Du kan også ringe til os i klinikken og så hjælper vi dig.</p>
+      </div>
+    </div>
+  </div> 
+
+  <div class="col-md-4 mb-2"> <!--De tre kolonner fylder på md+ 4 kolonner hver (=3 stk). Mb er marginbottom-->
+    <div class="card card-index h-100">
+      <img src="img/selvbetjening2.png" class="card-img-top" alt="https://www.flaticon.com/free-icon/emergency-call_2869773?term=medical&page=1&position=35&origin=style&related_id=2869773" id="selvbetjening2">
+      <div class="card-body">
+        <a href="praktiskinfo.html"><h6 class="card-title">RING TIL OS PÅ TLF. 84 84 84 84</h6></a>
+        <p class="card-text">Du kan ringe til os i vores telefontid i hverdage 8-10 og 10.30-12, hvor vi sidder klar til at besvare dit opkald.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-2" id="tidsbestilling"> <!--De tre kolonner fylder på md+ 4 kolonner hver (=3 stk). Mb er marginbottom-->
+    <div class="card card-index h-100">
+    <img src="img/selvbetjening3.png" class="card-img-top" alt="https://www.flaticon.com/free-icon/calendar_3991896?term=medical&page=1&position=36&origin=style&related_id=3991896" id="selvbetjening3">
+      <div class="card-body">
+        <a href="#"><h6 class="card-title">TIDSBESTILLING</h6></a>
+        <p class="card-text">I vores selvbetjening kan du bestille og aflyse dine tider. Du kan også ringe til os i klinikken og så hjælper vi dig.</p>
+      </div>
+    </div>
+  </div>
+
+</div> <!--Div lukker trekassertilselvbetjening-->
+ 
+<!-- ____________ STORT PERSONALEBILLEDE ____________ -->
+<img src="img/personaleforside.png" class="img-fluid pb-0" alt="..."><!--PB er padding-bottom, så billedet står på kassen under-->
+
+<!-- ____________ LYSEGRØN KASSE OVER FOOTEREN ____________ -->
+<div class="container-fluid lysegrønkasse">
+  <div class="row">
+    <div class="col-lg-7">
+     <h1 class="tekstpåforside brødtekstforsidekasse">VELKOMMEN TIL LÆGERNES HUS</h1>
+     <p class="brødtekstforside">
+      Hos Lægernes Hus er vores patienter i fokus. 
+      Vi er et lokalt lægehus, som har 3 praktiserende læger og et kompetent personale til at støtte lægerne bedst muligt. 
+      Du kan se mere om vores personale ved at <a href="personale.html">klikke her</a>.<br> 
+      Lægehuset er beliggende på Lægevejen 84 i 8484 Lægeby. Der er gode parkeringsmuligheder ved lægehuset, men der er også gode forbindelser med offentlig transport.
+      Vi har samlet et overblik over mulighederne, som du kan læse mere om ved at <a href="praktiskinfo.html">klikke her</a>.
+      Hvis du har brug for at lave en tidsbestilling eller forny din recept kan du <a href="#">logge på selvbetjeningen</a> eller ringe til os på tlf. 84 84 84 84. 
+      Du kan se vores telefontider <a href="praktiskinfo.html">her</a>.
+     </p>
+   </div>
+   
+    <div class="col-lg-3 pt-2 ml-auto selvbetjeningsknapforside">
+      <a href="#" class="btn-1" role="button">LOG PÅ SELVBETJENING</a> 
+    </div>
+  </div>
+</div>
+
+<!-- ____________ FOOTER ____________ -->
+<footer class="footer text-center text-lg-start" id="footer-baggrund"> <!--Footeren er hentet på: https://mdbootstrap.com/docs/standard/navigation/footer/-->
+  <div class="container p-4">
+    <div class="row footer-div">
+
+      <!--Første kolonne i footeren (Links)-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">LÆS MERE HER</h5>
+
+        <ul class="footer-info">
+          <li> <a href="findos.html" class="infolink">Find os</a> </li>
+          <li> <a href="personale.html" class="infolink">Personale</a> </li>
+          <li> <a href="praktiskinfo.html" class="infolink">Praktisk info</a> </li>
+          <li> <a href="#" class="infolink">Vaccination</a></li>
+          <li> <a href="#" class="infolink">Gravid</a> </li>
+          <li> <a href="#" class="infolink">Links</a> </li>
+          <li> <a href="#" class="infolink">Samarbejdspartnere</a> </li>
+          <li> <a href="#" class="infolink">Diverse skemaer</a> </li>
+          <li> <a href="#" class="infolink">Privatlivspolitik</a> </li>
+        </ul>
+      </div>
+
+      <!--Anden kolonne i footeren (Åbningstider)-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">LÆGEHUSETS ÅBNINGSTIDER</h5>
+        <ul class="footer-info">
+          <li>Mandag  08:00-16:00</li>
+          <li>Tirsdag  08:00-16:00</li>
+          <li>Onsdag  08:00-16:00</li>
+          <li>Torsdag  08:00-16:00</li>
+          <li>Fredag  08:00-12:00</li>
+        </ul>   
+      </div>
+
+      <!--Tredje kolonne i footeren (Telefontider)-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">LÆGEHUSETS TELEFONTIDER</h5>
+        <ul class="footer-info">
+          <li>Mandag til fredag</li>
+          <li>08:00-10:00 & 10:30-12:00</li>
+        </ul>
+      </div>
+
+      <!--Fjerde kolonne i footeren (Kontakt os)-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">KONTAKT OS</h5>
+        <ul class="footer-info">
+            <li>Tlf. 84 84 84 84</li>
+            <li>læge@lægerneshus.dk</li>
+            <li>Lægevejen 84</li>
+            <li>8484 Lægeby</li>
+            </ul>   
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  DETTE SITE HAR KUN TIL UNDERVISNINGSFORMÅL<br>  
+  © 2022 Copyright: Linnea Petersen
+  </div>
+  <!-- Copyright -->
+</footer>
+
+</body>
+</html>

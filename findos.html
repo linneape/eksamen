@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIND OS | LÆGERNES HUS</title>
+    <meta name=”robots” content=”noindex”><!--Denne kode sørger for at Google ikke kan finde siden-->
+    <meta name="description" content="Lægernes hus har en stor parkeringsplads, samt gode forbindelser med offentlig transport. Du kan læse mere om mulighederne her, samt få en rutevejledning."/>
+    <meta name="keywords" content="lægehus, find os, rutevejledning, parkering, transport">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!--CSS bootstrap-->
+    <link rel="stylesheet" type="text/css" href="lægehus.css"> <!--CSS filen-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> <!--Får java-bootstrap til at virke (fx dropdownmenu + burgerbar samtidigt)-->
+</head>
+<body>
+
+<!-- ____________ NAVIGATIONSBAR ____________ -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+
+    <!-- ____________ HEADER (NAVBAR-BRAND) ____________ -->
+    <a class="navbar-brand" href="index.html" id="overskrift">LÆGERNES HUS</a>
+
+    <!-- ____________ BURGERMENUEN ____________ -->
+    <!--"ml-auto" skubber burgermenuen så langt fra venstre som muligt (margin-left)-->
+    <button class="navbar-toggler ml-auto" type="button" 
+    data-bs-toggle="collapse" data-bs-target="#navbarText" 
+    aria-controls="navbarText" aria-expanded="false" 
+    aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+      <!--"ml-auto" skubber burgermenuen så langt fra venstre som muligt (margin-left)-->
+
+
+    <!--____________ KNAP 1: PRAKTISK INFO DROP DOWN MENU ____________-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="praktiskinfo.html" id="navbardropdown" 
+          role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            INFORMATION</a>
+
+          <!--UNDERSIDER PÅ DROPDOWN-->
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="praktiskinfo.html">PRAKTISK INFO</a></li>
+            <li><a class="dropdown-item" href="#">LINKS</a></li>
+            <li><a class="dropdown-item" href="#">VACCINATION</a></li>
+            <li><a class="dropdown-item" href="#">GRAVID</a></li>
+          </ul>
+        </li>
+
+    <!--____________ KNAP 2: LÆGEHUSET DROP DOWN MENU ____________-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
+          role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            LÆGEHUSET</a>
+
+          <!--UNDERSIDER PÅ DROPDOWN-->
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="personale.html">PERSONALE</a></li>
+            <li><a class="dropdown-item" href="#">AKTUELT</a></li>
+          </ul>
+        </li>
+
+    <!--____________ KNAP 3: FIND OS ____________-->
+        <li class="nav-item">
+          <a class="nav-link" href="findos.html">FIND OS</a>
+        </li>
+
+    <!--____________ KNAP 4: SELVBETJENING ____________-->
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="nav-btn-1">LOG PÅ SELVBETJENING</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+  <h1>FIND VEJ TIL LÆGEHUSET</h1>
+
+<!-- ____________ KASSE MED INFORMATIONER ____________ -->
+  <div class="container-fluid">
+    <div class="find-os-boks">
+        <div class="row">
+            <div class="col-md-6 find-os-venstre">
+                <h6>Lægevejen 84 - 8484 Lægebyen</h6>
+                <p>Ved rundkørslen med Kuben på Herningvej drejes mod Velling (mod fjorden). Følg ringvejen til du har passeret jernbanen, derefter er det 1. vej på højre hånd. Huset er ottekantet og synligt fra vejen, så du kan ikke tage fejl.</p><br>
+                <h6>Handicapforhold</h6>
+                <p>Adgangsforhold og hele huset er indrettet handicapvenligt.</p>
+            </div>
+     
+            <div class="col-md-6 find-os-højre">
+                <h6>Parkering</h6>
+                <p>Foran lægehuset er der en stor p-plads.</p>
+                <h6>Tog</h6>
+                <p>Stopper på Ringkøbing Station. Der er ikke stoppested ved Ringvejen.</p>
+                <h6>Bus</h6>
+                <p>Der går bus dagligt fra Velling og Ringkøbing Rutebilstation. Ca. hver time.</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+<!-- ____________ KASSE MED KORT ____________ -->
+  <div class="maps-boks"> <!--Kode til kort er hentet fra Google Maps--> <!--Col-lg-12 gør at kortet udfylder alle 12 kolonner på tværs af sitet-->
+          <iframe class="googlemaps col-lg-12 mb-4" 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.794710578335!2d8.977660215945745!3d56.143362980659596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464bbbfdd6042ed5%3A0xd9a07f909966d00d!2sGl%20Landevej%202%2C%207400%20Herning!5e0!3m2!1sda!2sdk!4v1670947357667!5m2!1sda!2sdk" 
+      width="1100" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  
+
+<!-- ____________ FOOTER ____________ -->
+<footer class="footer text-center text-lg-start" id="footer-baggrund"> <!--Footeren er hentet på: https://mdbootstrap.com/docs/standard/navigation/footer/-->
+  <div class="container p-4">
+    <div class="row footer-div">
+
+      <!--Første kolonne i footeren (Links)-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">LÆS MERE HER</h5>
+
+        <ul class="footer-info">
+          <li> <a href="findos.html" class="infolink">Find os</a> </li>
+          <li> <a href="personale.html" class="infolink">Personale</a> </li>
+          <li> <a href="praktiskinfo.html" class="infolink">Praktisk info</a> </li>
+          <li> <a href="#" class="infolink">Vaccination</a></li>
+          <li> <a href="#" class="infolink">Gravid</a> </li>
+          <li> <a href="#" class="infolink">Links</a> </li>
+          <li> <a href="#" class="infolink">Samarbejdspartnere</a> </li>
+          <li> <a href="#" class="infolink">Diverse skemaer</a> </li>
+          <li> <a href="#" class="infolink">Privatlivspolitik</a> </li>
+        </ul>
+      </div>
+
+      <!--Anden kolonne i footeren (Åbningstider)-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">LÆGEHUSETS ÅBNINGSTIDER</h5>
+        <ul class="footer-info">
+          <li>Mandag  08:00-16:00</li>
+          <li>Tirsdag  08:00-16:00</li>
+          <li>Onsdag  08:00-16:00</li>
+          <li>Torsdag  08:00-16:00</li>
+          <li>Fredag  08:00-12:00</li>
+        </ul>   
+      </div>
+
+      <!--Tredje kolonne i footeren (Telefontider)-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">LÆGEHUSETS TELEFONTIDER</h5>
+        <ul class="footer-info">
+          <li>Mandag til fredag</li>
+          <li>08:00-10:00 & 10:30-12:00</li>
+        </ul>
+      </div>
+
+      <!--Fjerde kolonne i footeren (Kontakt os)-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">KONTAKT OS</h5>
+        <ul class="footer-info">
+            <li>Tlf. 84 84 84 84</li>
+            <li>læge@lægerneshus.dk</li>
+            <li>Lægevejen 84</li>
+            <li>8484 Lægeby</li>
+            </ul>   
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+DETTE SITE HAR KUN TIL UNDERVISNINGSFORMÅL<br>  
+  © 2022 Copyright: Linnea Petersen
+  </div>
+  <!-- Copyright -->
+</footer>
+
+</body>
+</html>

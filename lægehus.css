@@ -1,0 +1,408 @@
+/*___________ TYPOGRAFI ___________*/
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#overskrift{ /*Dette er headeren i navbaren // "Lægernes hus"*/
+    font-size:40px;
+    color:#5C6E5D;
+    margin-bottom:8px;
+}
+
+h1{ /*Dette er overskrifterne på undersiderne // Praktisk info, personale og find vej til lægehuset*/
+    font-size:1.8em;
+    text-align: left;
+    padding-top:20px;
+    padding-bottom:10px;
+    font-weight: 500;
+    margin-left:110px;
+    margin-bottom: 0px;
+    margin-top:20px;
+    color: grey;
+}
+
+h2{ /*Overskrift i "praktisk info" // Konsultation, receptfornyelse, lægevagten*/
+    text-align: left;
+    font-size: 1.6em;
+}
+
+h4{ /*Overskrifter i lysegrønkasse // Åbningstider, telefontider*/
+    font-size:0.9em;
+    font-weight: 600;
+    color:#213425;
+}
+
+h5{ /*Overskrift i footeren*/
+    padding:10px;
+    font-size:1em;
+}
+
+h6{ /*Overskrifter på forsiden under de tre kasser // Receptfornyelse, ring til os, tidsbestilling*/
+    color: #AAB7AD;
+    font-weight: 600;
+}
+
+p{ /*Paragraffer*/
+    font-size:0.9em;
+    text-align: left;
+    line-height:1.9em;
+}
+
+a{ /*Links*/
+    text-decoration-line: none; /*Ingen understregning under links*/
+    color:#213425;
+}
+
+a:hover{ /*Links når du fører musen over*/
+    color:#AAB7AD;
+    text-decoration-line:none;
+}
+
+.card-title{ /*Hører til forside // Titlen på cards*/
+    font-size:1em;
+    text-align: center;
+    color: #F5F5F5;
+    font-weight: 600;
+    padding-top:4px;
+}
+
+.card-text{ /*Hører til forside // Brødtksten i cards*/
+    font-size:0.9em;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+
+
+/*___________ NAVIGATIONSBAREN ___________*/
+
+nav{ /*Navigationsbaren generelt*/
+    margin-right:80px;
+    margin-left: 80px;
+    margin-top:80px;
+}
+
+.nav-item{ /*Selve knapperne i navigationsbaren*/
+    padding-left: 20px; /*Luften mellem oversidernes knapper*/
+    padding-top:0px;
+}
+
+li a, .nav-link{ /*Navigationsbarens links*/
+    font-size: 1em;
+    color:grey;
+}
+
+li a, .nav-link:hover{ /*Navigationsbarens links når musen føres over*/
+    color:#213425;
+}
+
+#nav-btn-1{ /*Selvbetjeningsknap i navigationsbaren*/
+    background-color: #5C6E5D;
+    color: white;
+    border: none;
+    font-size: 1em;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top:-4px;
+    margin-left:20px;
+}
+
+#nav-btn-1:hover { /*Når man fører musen over selvbetjeningsknappen*/
+    color: #213425;
+ }
+
+.dropdown-item{ /*Undersider, tekst*/
+    display:none; /*Så man ikke kan se undersiderne, medmindre man kører musen over*/
+    background-color: white; /*Farven på undersidens knap*/
+    font-size: 0.9em;
+    color:grey;
+}
+
+.dropdown-item:hover{ /*Undersider, tekst (når musen føres over)*/
+    color:#213425;
+}
+
+.dropdown-menu{ /*Undersiderne samlet, kassen med undersider*/
+    display:block;
+    border:none; /*Der kom en streg, som viser der er en dropdown som ikke skulle være der*/
+    margin-top:-1px; /*Det var svært at nå at markere menuen for undersiderne, fordi den forsvandt for hurtigt. Ved at lave en margin-top har jeg rykket menuen tættere på oversidens link*/
+    padding:0; /*Der kom en mærkelig hvid kasse under lægehusets knap for at signalere at det er en dropdown. Ved at lave padding på undersiderne kunne jeg fjerne den*/
+}
+
+.dropdown-item:active{ /*Undersider, når man trykker på kassen*/
+    background-color: #F8F8F8; 
+}
+
+.dropdown:hover .dropdown-item{ /*Når man markerer oversider med musen viser den undersiderne*/
+    display:block; /*Teksten bliver vist ovenpå hinanden og udfylder hele linjen*/
+    width:250px; /*Længden på undersidens knap*/
+    margin-left:3px; /*Undersiderne står under oversiden*/
+    padding-top:7px;
+    padding-bottom:7px;
+}
+
+
+/*___________ FORSIDE // DE TRE KASSER UNDER SELVBETJENINGSKNAPPEN ___________*/
+
+.card-index{ /*De tre kasser under selvbetjeningsknappen på forsiden*/
+    padding-top:30px;
+    padding-bottom:15px;
+    border:none;
+    background-color: #5C6E5D;
+    color:white;
+    text-align: left;
+    line-height: 20;
+}
+
+#selvbetjening1, #selvbetjening2, #selvbetjening3{ /*Billeder under selvbetjening*/
+    width:55px;
+    margin: auto;
+}
+
+#trekassertilselvbetjening{ /*Rykker på kassen med de tre kasser samtidigt*/
+    margin-left:100px;
+    margin-right:100px;
+    margin-top:50px;
+}
+
+.btn-1{
+    background-color: #5C6E5D;
+    color: white;
+    border: none;
+    font-size: 1em;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top:-4px;
+    margin-left:20px;
+}
+
+.btn-1-ks{
+    margin-bottom:40px;
+    margin-top:30px;
+}
+
+#btn-1:hover { /*Når man fører musen over selvbetjeningsknappen*/
+    color: #213425;
+ }
+
+.lysegrønkasse{ /*Den lysegrønne kasse over footeren*/
+    background-color:#ECF0ED;
+    padding-top:px;
+    padding-bottom:40px;
+    padding-left: 80px;
+    margin:0;
+}
+
+.tekstpåforside{ /*Teksten i den lysegrønne kasse over footeren*/
+    font-size:1.8em;
+    text-align: left;
+    font-weight: 500;
+    color: grey;
+}
+
+.selvbetjeningsknapforside{
+    margin-top:40px;
+    margin-right:140px; /*Knappen har en ml-auto som skubber den så langt fra venstre som muligt, denne margin tilpasser den så den sidder hvor dne*/
+}
+
+.brødtekstforside{
+    margin-left:110px;
+    padding-right:0px;
+    color:#5C6E5D;
+}
+
+
+/*___________ PRAKTISK INFO ___________*/
+
+#grønkasse{ /*Den mørkegrønne kasse t.h.*/
+    background-color: #5C6E5D;
+    color:white;
+    padding:40px;
+    height:auto;
+    padding-bottom:70px;
+    padding-top:50px;
+}
+
+.btn-infotekst{
+    font-size:1.2em;
+    text-align: left;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    color:#AAB7AD;
+}
+.btn-infotekst:hover{
+    color:#AAB7AD;
+}
+
+.card-body-info{ /*Teksten i collapse-funktionen*/
+    padding-top:0px;
+    padding-left:13px;
+    padding-right:13px;
+    margin:0px;
+    line-height:2;
+    background-color: #5C6E5D;
+    color:white;
+    text-align: left;
+    font-size:1em;
+    border:none;
+}
+
+#infokasse{ /*Den lysegrønne kasse t.v.*/
+    background-color:#AAB7AD;
+    color:#5C6E5D;
+    text-align: center;
+    padding-bottom:40px;
+}
+
+.liste-åbningstid{ /*Listen med åbningstider*/
+    list-style-type: none;
+    line-height: 2;
+    font-size:0.9em;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:5px;
+}
+
+.img-fluid{ /*Ikonerne i den lysegrønne kasse (åbningstid og telefontid)*/
+    padding-left:120px;
+    padding-right:120px;
+    padding-top:40px;
+    padding-bottom:20px;
+}
+
+.btn-2 { /*Den store selvbetjeningsknap i den lysegrønne kasse*/
+    background-color: #5C6E5D;
+    color: white;
+    border: none;
+    font-size: 1em;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.btn-2:hover { /*Når man fører musen over selvbetjeningsknappen*/
+    color: #213425;
+}
+
+#btn-2-ks{
+    margin-top:20px;
+    margin-bottom:30px;
+}
+
+.praktisk-info{
+    margin-left:0;
+}
+
+
+
+
+/*___________ PERSONALE ___________*/
+
+fieldset{ /*Kasserne rundt om personalebillederne*/
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left:50px;
+    padding-right: 50px;
+    margin-right: 120px;/*Luften ud til siderne*/
+    margin-left:110px;
+    margin-bottom:40px;/*Luften mellem de forskellige fieldsets*/
+    background-color: #AAB7AD;
+    border:none;
+}
+
+legend{ /*Den label som ligger på fieldsets*/
+    padding: 15px 160px 15px 30px;
+    width: 253px;
+    background-color: #5C6E5D;
+    color:#F5F5F5;
+    font-size:1em;
+}
+
+.card-personale{ /*Tekstbestemmelser for teksten inde i fieldset*/
+    background-color: #AAB7AD;
+    color: #212121;
+    text-align: left;
+    font-size:0.9em;
+    padding-top:20px;
+    border:none;
+}
+
+.btn-3{ /*Knapperne i toppen af siden*/
+    background-color: #5C6E5D;
+    border:none;
+    margin-right:20px;
+    padding: 12px 30px 12px 30px;
+    color: white;
+}
+
+.btn-3:hover{/*Når man fører musen over selvbetjeningsknappen*/
+    color:#213425;
+}
+
+.knapper-personaleside{ /*Knapperne som fører brugeren ned til kategorien*/
+    margin-left:110px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+
+/*___________ FIND OS ___________*/
+
+.find-os-boks{ /*Boksen over kortet på find os sitet*/
+    background-color: #5C6E5D;
+    margin-top:40px;
+    margin-bottom:20px;
+    margin-left: 95px;
+    margin-right: 105px;
+    padding-left:50px;
+    padding-top: 50px;
+    padding-bottom:50px;
+    padding-right:0;
+    color:#F5F5F5;
+    line-height: 2;
+}
+
+.maps-boks{ /*Kortfunktionen er hentet fra Google Maps gennem deres del-funktion*/
+    margin-left:95px;
+    margin-right:105px;
+    margin-top:40px;
+    margin-bottom:80px;   
+}
+
+
+
+/*___________ FOOTER ___________*/
+
+.footer-info{ /*De to kolonner i midten med tider*/
+    list-style: none;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top:0;
+    line-height: 2;
+    font-size: 0.9em;
+}
+
+.infolink{ /*Links i footeren*/
+    color:white;
+}
+
+.infolink:hover{ /*Mussemarkør over links i footeren*/
+    text-decoration-line: none;
+    color:#213425;
+}
+
+#footer-baggrund{
+    background-color: #5C6E5D;
+}
+
+.footer-div{
+    padding:15px; /*Plads indeni footeren*/
+    color:white;
+}
+

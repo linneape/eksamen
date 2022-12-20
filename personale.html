@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONALE | LÆGERNES HUS</title>
+    <meta name=”robots” content=”noindex”><!--Denne kode sørger for at Google ikke kan finde siden-->
+    <meta name="description" content="Vi har et fagligt og kompetent personale, som er klar til at tage imod dig når du ankommer i klinikken. Du kan læse mere om dem her."/>
+    <meta name="keywords" content="lægehus, læge, personale">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!--CSS bootstrap-->
+    <link rel="stylesheet" type="text/css" href="lægehus.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> <!--Får java-bootstrap til at virke (fx dropdownmenu + burgerbar samtidigt)-->
+</head>
+<body>
+  
+<!-- ____________ NAVIGATIONSBAR ____________ -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+
+    <!-- ____________ HEADER (NAVBAR-BRAND) ____________ -->
+    <a class="navbar-brand" href="index.html" id="overskrift">LÆGERNES HUS</a>
+
+    <!-- ____________ BURGERMENUEN ____________ -->
+    <!--"ml-auto" skubber burgermenuen så langt fra venstre som muligt (margin-left)-->
+    <button class="navbar-toggler ml-auto" type="button" 
+    data-bs-toggle="collapse" data-bs-target="#navbarText" 
+    aria-controls="navbarText" aria-expanded="false" 
+    aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+      <!--"ml-auto" skubber burgermenuen så langt fra venstre som muligt (margin-left)-->
+
+
+    <!--____________ KNAP 1: PRAKTISK INFO DROP DOWN MENU ____________-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="praktiskinfo.html" id="navbardropdown" 
+          role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            INFORMATION</a>
+
+          <!--UNDERSIDER PÅ DROPDOWN-->
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="praktiskinfo.html">PRAKTISK INFO</a></li>
+            <li><a class="dropdown-item" href="#">LINKS</a></li>
+            <li><a class="dropdown-item" href="#">VACCINATION</a></li>
+            <li><a class="dropdown-item" href="#">GRAVID</a></li>
+          </ul>
+        </li>
+
+    <!--____________ KNAP 2: LÆGEHUSET DROP DOWN MENU ____________-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
+          role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            LÆGEHUSET</a>
+
+          <!--UNDERSIDER PÅ DROPDOWN-->
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="personale.html">PERSONALE</a></li>
+            <li><a class="dropdown-item" href="#">AKTUELT</a></li>
+          </ul>
+        </li>
+
+    <!--____________ KNAP 3: FIND OS ____________-->
+        <li class="nav-item">
+          <a class="nav-link" href="findos.html">FIND OS</a>
+        </li>
+
+    <!--____________ KNAP 4: SELVBETJENING ____________-->
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="nav-btn-1">LOG PÅ SELVBETJENING</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<h1>MØD VORES PERSONALE</h1>
+
+<!-- ____________ KNAPPER TIL PERSONALE ____________ -->
+  <div class="container-fluid knapper-personaleside "> <!--Boksen med de to kasser i-->
+    <div class="row"> <!--Personaleknapper-->
+  <div class="text-center mb-3 mt-3">
+    <a class="btn-3" href="#lægeoversigt">LÆGER</a> <!--Når man laver en href med et # i, så går linket til det id der er lavet med #--> 
+  </div>
+
+  <div class="text-center mb-3 mt-3">
+    <a class="btn-3" href="#sygeplejerskeroversigt">SYGEPLEJESKER</a> 
+  </div>
+
+  <div class="text-center mb-3 mt-3">
+    <a class="btn-3" href="#lægesekretærsoversigt">LÆGESEKRETÆRER</a> 
+  </div>
+
+  <div class="text-center mb-3 mt-3">
+    <a class="btn-3" href="#bioanalytikeroversigt">BIOANALYTIKERE</a> 
+  </div>
+
+  <div class="text-center mb-3 mt-3">
+    <a class="btn-3" href="#fysioterapeutoversigt">FYSIOTERAPEUT</a> 
+  </div>
+    </div>
+  </div>
+
+
+<!-- ____________ KASSERNE RUNDT OM PERSONALE ____________ -->
+<a id="lægeoversigt"></a> <!--Dette er det id, som tidligere kommentar henviser til når man trykker på linket-->
+ <fieldset><!--FIELDSET 1 // LÆGER-->
+     <legend>LÆGER</legend> <!--Dette giver kassen en overskrift, som er på linjen-->
+
+     <div class="row row-cols-1 row-cols-md-4 g-4" > 
+
+      <div class="col-md-6 col-lg-3 mb-2">
+        <div class="card card-personale h-100"> <!--h-100 gør at kasserne har samme højde-->
+          <img src="img/læge1.jpg" class="card-img-top" alt="https://www.pexels.com/da-dk/foto/smile-professionel-laege-munter-4989135/" id="læge1img">
+          <div class="card-body card-personale">RASMUS THOMSEN (F. 1987)
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-2"> 
+        <div class="card card-personale h-100">
+          <img src="img/læge2.jpg" class="card-img-top" alt="https://www.pexels.com/da-dk/foto/kvinde-portraet-laege-kittel-5998480/" id="læge2img">
+          <div class="card-body card-personale">MIA RASMUSSEN (F. 1991)
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-2">
+        <div class="card card-personale h-100">
+          <img src="img/læge3.jpg" class="card-img-top" alt="https://www.pexels.com/da-dk/foto/person-kvinde-glad-smile-5215009/" id="læge3img">
+          <div class="card-body card-personale"> TANJA SOMMER (F. 1989)
+          </div>
+        </div>
+      </div>
+
+    </div>
+ </fieldset>
+
+ <a id="sygeplejerskeroversigt"></a>
+ <fieldset> <!--FIELDSET 2 // SYGEPLEJERSKER-->
+  <legend>SYGEPLEJERSKER</legend> <!--Dette giver kassen en overskrift, som er på linjen-->
+  <div class="row row-cols-1 row-cols-md-4 g-4"> 
+
+   <div class="col-md-6 col-lg-3 mb-2">
+     <div class="card card-personale h-100"> <!--h-100 gør at kasserne har samme højde-->
+       <img src="img/sygeplejerske1.jpg" class="card-img-top" alt="https://www.pexels.com/da-dk/foto/kvinde-smile-holde-laege-9062164/" id="sygeplejerske1img">
+       <div class="card-body">KAMILLE MOGENSEN (F. 1994)
+       </div>
+
+     </div>
+   </div>
+
+   <div class="col-md-6 col-lg-3 mb-2"> 
+     <div class="card card-personale h-100">
+       <img src="img/sygeplejerske2.jpg" class="card-img-top" alt="https://www.pexels.com/da-dk/foto/mand-portraet-smile-laege-12660379/" id="sygeplejerske2img">
+       <div class="card-body">ALI MUHAN (F. 1991)
+       </div>
+     </div>
+   </div>
+
+   <div class="col-md-6 col-lg-3 mb-2">
+     <div class="card card-personale h-100">
+       <img src="img/sygeplejerske3.jpg" class="card-img-top" alt="https://www.pexels.com/da-dk/foto/mand-laege-tandlaege-sygeplejerske-4270087/" id="sygeplejerske3img">
+       <div class="card-body">ASLAN ASAKI (F. 1987)
+       </div>
+     </div>
+   </div>
+
+
+ </div>
+</fieldset>
+
+<a id="lægesekretærsoversigt"></a>
+<fieldset> <!--FIELDSET 3 // LÆGESEKRETÆRER-->
+  <legend>LÆGESEKRETÆRER</legend> <!--Dette giver kassen en overskrift, som er på linjen-->
+  <div class="row row-cols-1 row-cols-md-4 g-4"> 
+
+   <div class="col-md-6 col-lg-3 mb-2">
+     <div class="card card-personale h-100"> <!--h-100 gør at kasserne har samme højde-->
+       <img src="img/lægesekretær1.jpg" class="card-img-top" alt="https://www.pexels.com/da-dk/foto/person-kvinde-macbook-stetoskop-7195110/" id="lægesekretær1img">
+       <div class="card-body">LOUIANE PEDERSEN (F. 1971)
+       </div>
+
+     </div>
+   </div>
+
+   <div class="col-md-6 col-lg-3 mb-2"> 
+     <div class="card card-personale h-100">
+       <img src="img/lægesekretær2.jpg" class="card-img-top" alt="https://www.pexels.com/da-dk/foto/person-baerbar-computer-se-holde-5206931/" id="lægesekretær2img">
+       <div class="card-body">MARIANNE JENSEN (F. 1974)
+       </div>
+     </div>
+   </div>
+
+   <div class="col-md-6 col-lg-3 mb-2">
+     <div class="card card-personale h-100">
+       <img src="img/lægesekretær3.jpg" class="card-img-top" alt="https://www.pexels.com/da-dk/foto/person-kontor-internet-taste-8376280/" id="lægesekretær3img">
+       <div class="card-body">MIA KRISTOFFERSEN (F. 1996)
+       </div>
+     </div>
+   </div>
+
+   <div class="col-md-6 col-lg-3 mb-2">
+    <div class="card card-personale h-100">
+      <img src="img/lægesekretær4.jpg" class="card-img-top" alt="https://www.pexels.com/da-dk/foto/person-haender-kvinde-smile-6749770/" id="lægesekretær4img">
+      <div class="card-body">SARAH BØLLUND (F. 1994)
+      </div>
+    </div>
+  </div>
+ </div>
+</fieldset>
+
+<a id="bioanalytikeroversigt"></a>
+<fieldset> <!--FIELDSET 4 // BIOANALYTIKERE-->
+  <legend>BIOANALYTIKERE</legend> <!--Dette giver kassen en overskrift, som er på linjen-->
+  <div class="row row-cols-1 row-cols-md-4 g-4"> 
+
+   <div class="col-md-6 col-lg-3 mb-2">
+     <div class="card card-personale h-100"> <!--h-100 gør at kasserne har samme højde-->
+       <img src="img/bioanalytiker1.jpg" class="card-img-top" alt="https://www.pexels.com/da-dk/foto/hvid-professionel-laege-arme-krydsede-6762862/" id="bioanalytiker1img">
+       <div class="card-body">RAMIS RANA (F. 1986)
+       </div>
+
+     </div>
+   </div>
+
+   <div class="col-md-6 col-lg-3 mb-2"> 
+     <div class="card card-personale h-100">
+       <img src="img/bioanalytiker2.jpg" class="card-img-top" alt="https://www.pexels.com/da-dk/foto/kvinde-notesbog-smile-holde-7904477/" id="bioanalytiker2img">
+       <div class="card-body">STINNA SWARA (F. 1974)
+       </div>
+     </div>
+   </div>
+
+   <div class="col-md-6 col-lg-3 mb-2">
+     <div class="card card-personale h-100">
+       <img src="img/bioanalytiker3.jpg" class="card-img-top" alt="https://www.pexels.com/da-dk/foto/kvinde-smile-holde-laege-7447008/" id="bioanalytiker3img">
+       <div class="card-body"> NABINA MUREL (F. 1988)
+       </div>
+     </div>
+   </div>
+
+  
+  </div>
+</fieldset>
+
+<a id="fysioterapeutoversigt"></a>
+<fieldset> <!--FIELDSET 5 // FYSIOTERAPEUT-->
+  <legend>FYSIOTERAPEUT</legend> <!--Dette giver kassen en overskrift, som er på linjen-->
+  <div class="row row-cols-1 row-cols-md-4 g-4"> 
+
+   <div class="col-md-6 col-lg-3 mb-2">
+     <div class="card card-personale h-100"> <!--h-100 gør at kasserne har samme højde-->
+       <img src="img/fysioterapeut1.jpg" class="card-img-top" alt="https://www.pexels.com/da-dk/foto/mand-laege-arme-krydsede-stetoskop-8460157/" id="fysioterapeut1img">
+       <div class="card-body">KLAUS SOMMER (F. 1967)
+       </div>
+
+     </div>
+   </div>
+ </div>
+</fieldset>
+<br>
+
+<!-- ____________ FOOTER ____________ -->
+<footer class="footer text-center text-lg-start" id="footer-baggrund"> <!--Footeren er hentet på: https://mdbootstrap.com/docs/standard/navigation/footer/-->
+  <div class="container p-4">
+    <div class="row footer-div">
+
+      <!--Første kolonne i footeren (Links)-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">LÆS MERE HER</h5>
+
+        <ul class="footer-info">
+          <li> <a href="findos.html" class="infolink">Find os</a> </li>
+          <li> <a href="personale.html" class="infolink">Personale</a> </li>
+          <li> <a href="praktiskinfo.html" class="infolink">Praktisk info</a> </li>
+          <li> <a href="#" class="infolink">Vaccination</a></li>
+          <li> <a href="#" class="infolink">Gravid</a> </li>
+          <li> <a href="#" class="infolink">Links</a> </li>
+          <li> <a href="#" class="infolink">Samarbejdspartnere</a> </li>
+          <li> <a href="#" class="infolink">Diverse skemaer</a> </li>
+          <li> <a href="#" class="infolink">Privatlivspolitik</a> </li>
+        </ul>
+      </div>
+
+      <!--Anden kolonne i footeren (Åbningstider)-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">LÆGEHUSETS ÅBNINGSTIDER</h5>
+        <ul class="footer-info">
+          <li>Mandag  08:00-16:00</li>
+          <li>Tirsdag  08:00-16:00</li>
+          <li>Onsdag  08:00-16:00</li>
+          <li>Torsdag  08:00-16:00</li>
+          <li>Fredag  08:00-12:00</li>
+        </ul>   
+      </div>
+
+      <!--Tredje kolonne i footeren (Telefontider)-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">LÆGEHUSETS TELEFONTIDER</h5>
+        <ul class="footer-info">
+          <li>Mandag til fredag</li>
+          <li>08:00-10:00 & 10:30-12:00</li>
+        </ul>
+      </div>
+
+      <!--Fjerde kolonne i footeren (Kontakt os)-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">KONTAKT OS</h5>
+        <ul class="footer-info">
+            <li>Tlf. 84 84 84 84</li>
+            <li>læge@lægerneshus.dk</li>
+            <li>Lægevejen 84</li>
+            <li>8484 Lægeby</li>
+            </ul>   
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  DETTE SITE HAR KUN TIL UNDERVISNINGSFORMÅL<br>  
+  © 2022 Copyright: Linnea Petersen
+  </div>
+  <!-- Copyright -->
+</footer>
+
+</body>
+</html>

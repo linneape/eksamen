@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRAKTISK INFO | LÆGERNES HUS</title>
+    <meta name=”robots” content=”noindex”><!--Denne kode sørger for at Google ikke kan finde siden-->
+    <meta name="description" content="Læs mere om vores forskellige konsultationsmuligheder, samt vores informationer om sygebesøg, receptfornyelse og lægevagten."/>
+    <meta name="keywords" content="lægehus, konsultation, sygebesøg, receptfornyelse, lægevagten">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!--CSS bootstrap-->
+    <link rel="stylesheet" type="text/css" href="lægehus.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> <!--Får java-bootstrap til at virke (fx dropdownmenu + burgerbar samtidigt)-->
+</head>
+<body>
+  
+<!-- ____________ NAVIGATIONSBAR ____________ -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+
+    <!-- ____________ HEADER (NAVBAR-BRAND) ____________ -->
+    <a class="navbar-brand" href="index.html" id="overskrift">LÆGERNES HUS</a>
+
+    <!-- ____________ BURGERMENUEN ____________ -->
+    <!--"ml-auto" skubber burgermenuen så langt fra venstre som muligt (margin-left)-->
+    <button class="navbar-toggler ml-auto" type="button" 
+    data-bs-toggle="collapse" data-bs-target="#navbarText" 
+    aria-controls="navbarText" aria-expanded="false" 
+    aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+      <!--"ml-auto" skubber burgermenuen så langt fra venstre som muligt (margin-left)-->
+
+
+    <!--____________ KNAP 1: PRAKTISK INFO DROP DOWN MENU ____________-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="praktiskinfo.html" id="navbardropdown" 
+          role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            INFORMATION</a>
+
+          <!--UNDERSIDER PÅ DROPDOWN-->
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="praktiskinfo.html">PRAKTISK INFO</a></li>
+            <li><a class="dropdown-item" href="#">LINKS</a></li>
+            <li><a class="dropdown-item" href="#">VACCINATION</a></li>
+            <li><a class="dropdown-item" href="#">GRAVID</a></li>
+          </ul>
+        </li>
+
+    <!--____________ KNAP 2: LÆGEHUSET DROP DOWN MENU ____________-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
+          role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            LÆGEHUSET</a>
+
+          <!--UNDERSIDER PÅ DROPDOWN-->
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="personale.html">PERSONALE</a></li>
+            <li><a class="dropdown-item" href="#">AKTUELT</a></li>
+          </ul>
+        </li>
+
+    <!--____________ KNAP 3: FIND OS ____________-->
+        <li class="nav-item">
+          <a class="nav-link" href="findos.html">FIND OS</a>
+        </li>
+
+    <!--____________ KNAP 4: SELVBETJENING ____________-->
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="nav-btn-1">LOG PÅ SELVBETJENING</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<h1>PRAKTISK INFORMATION</h1>
+
+<!-- ____________ STOR GRØN KASSE ____________ -->
+<br><br>
+  <div class="container-fluid"> <!--Container-fluid gør at den fylder hele sidens width og er responsivt-->
+      <div class="row align-items-start justify-content-center"> <!--Kasserne står midt på siden-->
+      
+
+      <!--Den mørkegrønne kasse med collapse-funktion i // MR-4 er margin-right på den grønne boks-->
+      <div class="col-md-7 mb-2 mr-2 ml-2" id="grønkasse"> <!--Jeg oplevede en del problemer med margin-left i mobilversionen på den grønne kasse, så min løsning blev at centrere alt indhold (den grønne og lysegrønne kasse) i den omkringværende div og give både marginright og marginleft på begge kasser-->
+        <section class="praktiskinfo-section">
+
+  <!--Her er forklaringen på collapse-funktionen-->
+            <div class="infotekst"> 
+              <p>
+                <button class="btn btn-infotekst" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapseExample7" 
+                aria-expanded="false" 
+                aria-controls="collapseExample7"> 
+                
+                <!--Data-bs-toggle="collapse" betyder at knappen skal bruge collapse-funktionen, hvor div'en kan åbnes og lukkes-->
+                <!--Data-bs-target henviser til det content som skal åbnes og lukkes (div'en med id'et)-->
+                <!--Aria-->
+
+                  LÆGEHUSETS KONTAKTINFORMATIONER ▾
+                </button>
+              </p>
+
+              <div class="collapse" id="collapseExample7"> <!--Id'et her er det som åbner, når man trykker på knappen ovenover-->
+                <div class="card card-body-info infotekst mb-3 ml-0"> <!--mb=margin bottom ml=margin left-->
+                <p>Tlf. 84 84 84 84 <br>læge@lægehuset.dk<br>Lægevejen 84, 8484 Lægeby</p>                 
+                </div>
+              </div>
+            
+  <!--Her kommer de resterende collapse-knapper-->        
+
+      <div class="normal-konsultation">
+      <p>
+        <button class="btn btn-infotekst" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+          NORMAL KONSULTATION ▾
+        </button>
+      </p>  
+
+        <div class="collapse" id="collapseExample1">
+          <div class="card card-body-info infotekst mb-3 ml-0">
+            <p>De fleste af vores tider er “samme-dags-tider”. Dette betyder, at tiderne først kan bookes samme dag. Dette sker ved, at man ringer til sekretæren fra morgenstunden. Der er fortsat mulighed for at forudbooke tider, dette sker så vidt muligt via hjemmesiden. Der er almindeligvis afsat 15 min. pr. konsultation. Kun i særlige tilfælde kan der aftales længere varighed. Erfaringer viser, at patienten har bedst udbytte af en konsultation, såfremt kun et helbredsproblem håndteres  pr. gang. Der kan dog af og til være tid til at tale om et andet mindre problem.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="kort-konsultation">
+        <p>
+          <button class="btn btn-infotekst" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+            KORT KONSULTATION ▾
+          </button>
+        </p>
+        </div>
+
+        <div class="collapse" id="collapseExample2">
+          <div class="card card-body-info infotekst mb-3">
+            <p>Der er dagligt i tidsrummet kl. 8.00- 8.30 mulighed for konsultation vedrørende en mindre problemstilling (forventet tidsforbrug på 5min) uden forudgående aftale. Man kan også her henvende sig for aftalte blodprøvetagninger og vaccinationer. Giv venligst en kort besked til sekretæren om henvendelsesårsagen ved ankomsten, så vi kan lette arbejdsgangen.</p>
+          </div>
+        </div>
+      </div>
+          
+      <div class="telefonkonsultation praksisk-info">
+        <p>
+          <button class="btn btn-infotekst" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+            TELEFONKONSULTATION ▾
+          </button>
+        </p>
+      
+          <div class="collapse" id="collapseExample3">
+            <div class="card card-body-info infotekst mb-3">
+              <p>Der er telefontid dagligt kl. 08:00-10:00 & 10:30-12:00 på tlf. 84 84 84 84.<br> Telefonen betjenes af sekretæren og i mindre omfang sygeplejersken. Her aftales konsultation til samme dag, bestilles medicin og gives evt. svar på prøver. Desuden kan aftales tilbageringning af læge ved lejlighed. </p>
+            </div>
+          </div>
+      </div>
+          
+      <div class="sygebesøg praksisk-info">
+        <p>
+          <button class="btn btn-infotekst" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+            SYGEBESØG ▾
+          </button>
+        </p>
+          
+          <div class="collapse" id="collapseExample4">
+            <div class="card card-body-info infotekst mb-3">
+              <p>Sygebesøg aftales så vidt muligt med sekretæren mellem kl. 8 og 9.</p>
+            </div>
+          </div>
+
+            <div class="receptfornyelsepraksisk-info">
+              <p>
+                <button class="btn btn-infotekst" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                  RECEPTFORNYELSE ▾
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample5">
+                <div class="card card-body-info infotekst offset-1 mb-3">
+                <p>Der er mulighed for i vores selvbetjenings-funktion at kunne forny dine recepter, men du kan altid ringe til os i telefontiden på tlf. 84 84 84 84 eller komme ind til os i klinikken.</p>
+                </div>
+              </div>
+
+              <div class="lægevagten praksisk-info">
+                <p>
+                  <button class="btn btn-infotekst" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+                    LÆGEVAGTEN ▾
+                  </button>
+                </p>
+                <div class="collapse" id="collapseExample6">
+                  <div class="card card-body-info infotekst">
+                    <p>Telefonnr.: 70 11 31 31 i tidsrummet 16.00-08.00 på hverdage, samt i weekend og på helligdage: hele døgnet. Her aftales evt sygebesøg eller vagtkonsultation på en af vagtlægeklinikkerne i Herning, Holstebro, Ringkøbing, Tarm eller Lemvig. Alle skadestuer er “lukkede” og kræver visitation af en læge/vagtlæge.</p>
+                  </div>
+                </div>
+
+          </div>
+          </div>         
+      </div>
+
+        </section>
+      </div>
+
+<!--Den lysegrønne kasse med åbningstider og telefontider-->   
+<div class="col-md-3 mr-2 ml-2" id="infokasse"> 
+        <img src="img/ur.png" class="img-fluid" alt="https://www.flaticon.com/free-icon/clock_2182738?related_id=2182738&origin=pack">
+        <h4 id="klinikinfo">LÆGEKLINIKKENS ÅBNINGSTIDER</h4><!--Har lavet denne til h4 i stedet for h3 for at kunne style dens css anderledes-->        
+        <ul class="liste-åbningstid">
+          <li>MANDAG  08:00-16:00</li>
+          <li>TIRDAG  08:00-16:00</li>
+          <li>ONSDAG  08:00-16:00</li>
+          <li>TORSDAG  08:00-16:00</li>
+          <li>FREDAG  08:00-12:00</li>
+        </ul>      
+        
+        <img src="img/telefontid.png" class="img-fluid" alt="https://www.flaticon.com/free-icon/telephone_2182705?related_id=2182705&origin=pack"> 
+        <h4>LÆGEKLINIKKENS TELEFONTIDER</h4> <!--Har lavet denne til h4 i stedet for h3 for at kunne style dens css anderledes-->
+        <ul class="liste-åbningstid">
+         <li>MANDAG TIL FREDAG</li>
+          <li>08:00-10:00 & 10:30-12:00</li>
+        </ul>
+  <br><br>
+      <h4>RING TLF. 84 84 84 84</h4>
+
+       <!--Selvbetjeningsknappen fra side 1 (BTN-2)-->
+       <div class="text-center" id="btn-2-ks">
+        <a href="#" class="btn-2" role="button">LOG PÅ SELVBETJENING</a>
+
+       </div> <!--Div lukker text-center-->
+      </div> <!--Div lukker infokasse-->
+    </div> <!--Div afslutter "row-align-items-start"-->
+  </div> <!--Div afslutter "container-fluid text-center"-->
+
+<br><br> <!--Giver luft mellem kasser og footeren-->
+
+<!-- ____________ FOOTER ____________ -->
+<footer class="footer text-center text-lg-start" id="footer-baggrund"> <!--Footeren er hentet på: https://mdbootstrap.com/docs/standard/navigation/footer/-->
+  <div class="container p-4">
+    <div class="row footer-div">
+
+      <!--Første kolonne i footeren (Links)-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">LÆS MERE HER</h5>
+
+        <ul class="footer-info">
+          <li> <a href="findos.html" class="infolink">Find os</a> </li>
+          <li> <a href="personale.html" class="infolink">Personale</a> </li>
+          <li> <a href="praktiskinfo.html" class="infolink">Praktisk info</a> </li>
+          <li> <a href="#" class="infolink">Vaccination</a></li>
+          <li> <a href="#" class="infolink">Gravid</a> </li>
+          <li> <a href="#" class="infolink">Links</a> </li>
+          <li> <a href="#" class="infolink">Samarbejdspartnere</a> </li>
+          <li> <a href="#" class="infolink">Diverse skemaer</a> </li>
+          <li> <a href="#" class="infolink">Privatlivspolitik</a> </li>
+        </ul>
+      </div>
+
+      <!--Anden kolonne i footeren (Åbningstider)-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">LÆGEHUSETS ÅBNINGSTIDER</h5>
+        <ul class="footer-info">
+          <li>Mandag  08:00-16:00</li>
+          <li>Tirsdag  08:00-16:00</li>
+          <li>Onsdag  08:00-16:00</li>
+          <li>Torsdag  08:00-16:00</li>
+          <li>Fredag  08:00-12:00</li>
+        </ul>   
+      </div>
+
+      <!--Tredje kolonne i footeren (Telefontider)-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">LÆGEHUSETS TELEFONTIDER</h5>
+        <ul class="footer-info">
+          <li>Mandag til fredag</li>
+          <li>08:00-10:00 & 10:30-12:00</li>
+        </ul>
+      </div>
+
+      <!--Fjerde kolonne i footeren (Kontakt os)-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">KONTAKT OS</h5>
+        <ul class="footer-info">
+            <li>Tlf. 84 84 84 84</li>
+            <li>læge@lægerneshus.dk</li>
+            <li>Lægevejen 84</li>
+            <li>8484 Lægeby</li>
+            </ul>   
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  DETTE SITE HAR KUN TIL UNDERVISNINGSFORMÅL<br>  
+  © 2022 Copyright: Linnea Petersen
+  </div>
+  <!-- Copyright -->
+</footer>
+
+</body>
+</html>
